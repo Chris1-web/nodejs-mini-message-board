@@ -46,6 +46,19 @@ form button {
   color: white;
 }
 
+.container a.home-link {
+  border: none;
+  text-decoration: underline;
+  color: blue;
+  display: flex;
+  justify-content: center;
+}
+
+.container a.home-link:hover {
+  background-color: white;
+  color: black;
+}
+
 p.title {
   font-size: 2rem;
   text-align: center;
@@ -118,4 +131,11 @@ form button {
   border: 0.3rem solid transparent;
   border-radius: 0.5rem;
   cursor: pointer;
+}
+
+p.error-message {
+  text-align: center;
+  color: red;
+  font-size: 3rem;
+  padding-top: 2rem;
 }
