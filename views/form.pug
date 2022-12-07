@@ -1,0 +1,16 @@
+extends layout
+
+block content 
+    .container 
+        p.title Post A Message
+        div.new-message-container 
+            a.add-new-message-link(href="/") Home
+        form(method="post" action="/new")
+            .name
+                label(for="name") Name
+                input(type="text" maxLength=50 id="name" name="name" required)
+            .message-text
+                label(for="messageText") Message
+                input(type="text" maxLength=300 id="messageText" name="messageText" required)
+            .submit-button 
+                button Create Message

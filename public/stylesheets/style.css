@@ -13,26 +13,48 @@ body {
   background-color: grey;
 }
 
-a {
-  color: #00b7ff;
-}
-
 .container {
   max-width: 100rem;
   margin: 2rem auto;
   background-color: white;
   border: 1.2rem solid black;
-  height: 90vh;
+  height: 94vh;
+}
+
+.container .new-message-container {
+  display: flex;
+  justify-content: center;
+}
+
+.container a {
+  font-size: 1.8rem;
+  border: 0.3rem solid blue;
+  display: inline;
+  color: black;
+  text-align: center;
+  max-width: 100%;
+  margin: 1.2rem auto;
+  text-decoration: none;
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.5rem;
+  transition: all 200ms ease-in;
+}
+
+.container a:hover,
+form button {
+  background-color: blue;
+  color: white;
 }
 
 p.title {
   font-size: 2rem;
   text-align: center;
   text-decoration: underline;
-  padding: 2rem;
+  padding: 1.2rem 1.2rem 0rem 1.2rem;
 }
 
-ul {
+ul,
+form {
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -71,4 +93,28 @@ ul.messages p.time {
   text-align: right;
   color: rgb(216, 214, 214);
   font-size: 1rem;
+}
+
+form {
+  margin: 0 5rem;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+form input {
+  padding: 0.5rem 1.2rem;
+  border: 0.2rem solid blue;
+  width: 30rem;
+}
+
+form button {
+  padding: 0.5rem 1.2rem;
+  font-size: 1.5rem;
+  border-radius: 0.2rem;
+  border: 0.3rem solid transparent;
+  border-radius: 0.5rem;
 }

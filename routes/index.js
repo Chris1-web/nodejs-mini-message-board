@@ -17,5 +17,14 @@ router.get("/", function (req, res, next) {
 });
 
 // POST new message page
+router.get("/new", function (req, res, next) {
+  res.render("form", { title: "Create New Message" });
+});
+
+router.post("/new", async function (req, res, next) {
+  const { name, messageText } = await req.body;
+  messages.push({ text: messageText, user: name, added: new Date() });
+  res.redirect("/");
+});
 
 module.exports = router;
