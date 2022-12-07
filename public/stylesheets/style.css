@@ -117,4 +117,5 @@ form button {
   border-radius: 0.2rem;
   border: 0.3rem solid transparent;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
