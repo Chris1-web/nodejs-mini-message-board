@@ -1,7 +1,4 @@
 {
-  "engines": {
-    "node": "16.14.0"
-  },
   "name": "nodejs-mini-message-board",
   "version": "0.0.0",
   "private": true,
