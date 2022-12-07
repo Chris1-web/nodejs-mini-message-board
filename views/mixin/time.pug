@@ -1,0 +1,2 @@
+mixin time(message)
+    p.time= `${message.getDate().toString().padStart(2,0)}/${(message.getMonth()+1).toString().padStart(2,0)}/${message.getFullYear()}, ${message.getHours()+1}:${message.getMinutes()}${(message.getHours()+1) >= 12 ? 'pm' : 'am'}`

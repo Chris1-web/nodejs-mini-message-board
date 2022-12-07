@@ -1,5 +1,14 @@
 extends layout
+include ./mixin/time
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .container
+    p.title Mini Messageboard
+    ul.messages 
+      each message in messages
+        li.message 
+          p.name= message.user
+          p.text= message.text 
+          +time(message.added)
+          //- p.time= `${message.added.getDate().toString().padStart(2,0)}/${(message.added.getMonth()+1).toString().padStart(2,0)}/${message.added.getFullYear()}, ${message.added.getHours()+1}:${message.added.getMinutes()}${(message.added.getHours()+1) >= 12 ? 'pm' : 'am'}`
+

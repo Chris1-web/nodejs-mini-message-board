@@ -1,8 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 1.4rem "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: grey;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 2rem auto;
+  background-color: white;
+  border: 1.2rem solid black;
+  height: 90vh;
+}
+
+p.title {
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+  padding: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 0 5rem;
+  height: 80%;
+  overflow: scroll;
+  border-right: 0.2rem solid black;
+  border-bottom: 0.2rem solid black;
+}
+
+ul.messages li {
+  background-color: blue;
+  padding: 1.2rem 1.5rem;
+  color: white;
+  border-radius: 1.2rem;
+}
+
+ul.messages li.message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+ul.messages p.name {
+  font-size: 1.2rem;
+  color: pink;
+}
+
+ul.messages p.text {
+  font-size: 2rem;
+}
+
+ul.messages p.time {
+  text-align: right;
+  color: rgb(216, 214, 214);
+  font-size: 1rem;
 }
